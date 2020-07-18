@@ -2,6 +2,7 @@ package com.practice.helloworld;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hello world");
+        User user=new User(1L,"name");
+        System.out.println(user);
     }
 }
