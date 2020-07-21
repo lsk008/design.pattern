@@ -7,6 +7,20 @@
     <groupId>org.example</groupId>
     <artifactId>practice</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <spring.version>4.2.3.RELEASE</spring.version>
+        <slf4j.version>1.7.2</slf4j.version>
+        <logback.version>1.1.3</logback.version>
+        <mybatis.version>1.2.5</mybatis.version>
+        <jackson.version>2.4.0</jackson.version>
+        <poi.version>3.10-FINAL</poi.version>
+        <mysql.version>5.1.35</mysql.version>
+        <oracle.version>11.2.0.1.0</oracle.version>
+        <logisticTools.version>1.0.6-SNAPSHOT</logisticTools.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
@@ -15,6 +29,54 @@
             <version>1.18.4</version>
             <scope>provided</scope>
         </dependency>
+        <!-- spring start-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <!-- spring end-->
 
     </dependencies>
 
