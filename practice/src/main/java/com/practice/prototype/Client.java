@@ -1,6 +1,7 @@
 package com.practice.prototype;
 
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -17,6 +18,11 @@ public class Client {
         AnnotationConfigApplicationContext context1=new AnnotationConfigApplicationContext("com.practice");
         Wolf wolf=context1.getBean(Wolf.class);
         System.out.println(wolf);
+
+
+        ApplicationContext context2=new AnnotationConfigApplicationContext();
+
+
 
 
     }
